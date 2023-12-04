@@ -1,66 +1,29 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<h1>BASIC PROGRAMMING TEST: Experienced Software Developer</h1>
+<p>Last Updated: 5th July 2019-Time Allowed: 24 hours</p>
+<h3>Background:</h3>
+. <div>The database is: bincom_test.sql. Download the Database at
+https://drive.google.com/file/d/0B77xAtHK1hd4Ukx6SHpqTkd6TWM/view It contains Dummy results for the 2011 elections from different polling units, wards, and
+LGA.</div>
+From INEC Polling units are under Wards, Wards are under LGA, LGAs are under States
+The central idea of this client project is that given all the individual results announced in polling units ( announced_pu_results) under any LGA, we should be able to get an estimated result for that LGA. This can then be cross-checked with the result announced at the local government level ( announced_Iga_results
+<div>Table: polling_unit contains a list of polling units (each polling unit has a ward ID, LGA ID, and state ID)</div>
+<div>Table: ward contains a list of wards</div>
+<div>Table: LGA contains a list of LGA</div>
+<div>Table: announced_pu_results contains dummy results of various polling units - NOTE: Result from each polling unit is stored on about 9 rows with the score from each party being individual rows.
+ie for polling_unit_uniqueid = 8 we have results as follows: PDP: 802, DPP: 719, ACN: 416, PPA: 939, CDC: 394, JP:
+polling_unit uniqueid announced_pu_results.polling_unit_uniqueid (Note the difference between polling_unitid and polling unit uniqueid)</div>
+Table: announced_lga_results contains dummy results of various local governments as announced at the local government coalition centre.
+<p>Question 1:
+Create a page to display the result for any individual polling unit on a web page. Note that the Database you have been given only contains LGA's in Delta State (state id: 25).</p>
+<br><p>
+Question 2:
+Create a page to display the summed total result of all the polling units under any particular local government Local Government should be selected using a select box.</p>
+<br><p>
+Do NOT use the announced LGA result table to display this required result. The announced LGA table is designed to be used for a comparison of a summed total of all polling unit results under any particular LGA</p>
+<br><p>
+Question 3:
+Create a page to be used to store results for ALL parties for a new polling unit.</p><br>
+Hints:
+We are testing your basic programming ability.
+Ensure your solution is VERY user friendly. For example, use a chained combo box where possible. (You
+may also browse any website of your choice to get code snippets and tutorials, if necessary).
